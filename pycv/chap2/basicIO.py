@@ -76,6 +76,13 @@ class basicIO():
         print('Done!')
         vCapture.release()
 
+    
+    def displayImage():
+        img = cv.imread('/home/khuehm/wrkspc/ComputerVision/pycv/resources/img_01.jpg')
+        cv.imshow('Display Image', img)
+        cv.waitKey(0)
+        cv.destroyAllWindows()
+
 
 
 if __name__ == '__main__':
@@ -86,4 +93,5 @@ if __name__ == '__main__':
     #basicIO.imgItem()
     #basicIO.imgROI()
     #basicIO.video_RW()
-    basicIO.stream_RW()
+    #basicIO.stream_RW()
+    basicIO.displayImage()
